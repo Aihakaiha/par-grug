@@ -1,0 +1,68 @@
+body, html{
+    height:100%;
+    margin:0;
+    font-size:16px;
+    font-family:"Lato", sans-serif;
+    font-weight:400;
+    line-height:1.8em;
+    color:rgb(247, 0, 193);
+}
+.pimg1, pimg2, pimg3{
+    position:relative;
+    opacity:0,70;
+    background-position:center;
+    background-size:cover;
+    background-repeat:no-repeat;
+
+    /*
+    fixed = parallax
+    scroll = normal
+    */
+    background-attachment:fixed;
+}
+
+.pimg1{
+    background-image:url("./back.jpg");
+    min-height:100%;
+}
+
+.pimg2{
+    background-image:url("./hans.jpg");
+    min-height:500px;
+}
+
+.pimg3{
+    background-image:url("./jhan.jpg");
+    min-height:770px;
+}
+
+.section-light{
+    background-color:#000;
+    color:rgb(247, 1, 165);
+}
+
+.section-dark{
+    background-color:#000;
+    color:rgb(247, 1, 165);
+}
+
+.ptext{
+    position:absolute;
+    top:50%;
+    width:100%;
+    text-align:center;
+    color:#ff00dd;
+    font-size:27px;
+    letter-spacing:8px;
+    text-transform:uppercase;    
+}
+
+.ptext .border{
+    background-color:transprent;
+}
+
+@media(max-width:568px){
+    .pimg1, .pimg2, .pimg3{
+        background-attachment:scroll;
+    }
+}
